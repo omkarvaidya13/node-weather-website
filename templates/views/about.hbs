@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 
 <html>
-
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">    
@@ -12,8 +12,32 @@
     <div class="main-content">
         {{>header}}
         {{!-- <h1>{{title}}</h1> --}}
-        <p>This site was created by Omkar Vaidya. It uses data from mapbox.com and darksky.net!</p>
+        {{!-- <p>This site was created by Omkar Vaidya. It uses data from mapbox.com and darksky.net!</p> --}}
         <img class = "portrait" src="/img/me.jpeg">
+
+    <div>
+    <p>Hello, </p>
+    <p>My name is Omkar Vaidya.</p>
+    <p id="main-body">I am currently a first year Graduate student in Computer Science at RIT. I am interested in the fields of Data Science and Full Stack Development.</p>
+    <p id="main-body">I am learning Node.js and have developed this weather application using Node.js.
+    The application fetches the forecast using the Darksky.net API and geocoding is done using Mapbox.com
+    The Mapbox geocodes the place you want to search the weather for and provides with the co-ordinates for that place (latitude,longitude).
+    The Darksky API finds the forecast using the latitude and longitude and provides us the weather forecast.
+    The Node.js application is deployed using Heroku.</p>
+
+    <p>You can contact me on:</p>
+<div class="row">
+  <div class="column">
+      <a href="https://www.linkedin.com/in/omkarvaidya13"><img class="contact" src="/img/linkedin.png"></a>
+  </div>
+  <div class="column">
+    <a href="mailto:omkarvaidya13@gmail.com"><img class="contact" src="/img/gmail.png"></a>
+  </div>
+  <div class="column">
+    <a href="https://github.com/omkarvaidya13"><img class="contact" src="/img/git.png"></a>
+  </div>
+</div>
+    </div>
         {{!-- <p>Created By: {{name}}</p> --}}
     </div>
     {{>footer}}

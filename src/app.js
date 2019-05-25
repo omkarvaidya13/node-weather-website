@@ -93,22 +93,6 @@ app.get('/weather', (req, res) => {
     }
 })
 
-app.get('/products', (req, res) => {
-    if(!req.query.search){
-        return res.send({
-            error: 'You must provide a search term.'
-        })
-    }
-    console.log(req.query.search)  
-    res.send({
-        products: []
-    })
-})
-
-// app.com
-// app.com/help
-// app.com/about
-
 // SETTING UP SPECIFIC ERROR PAGE
 app.get('/help/*', (req, res) => {
     // res.send('Help article not found.')

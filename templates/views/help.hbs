@@ -3,6 +3,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Help</title>
     <link rel="icon" href="/img/weather.png">
     <link rel="stylesheet" href="/css/styles.css">
@@ -11,7 +12,21 @@
 <body>
     <div class="main-content">
         {{>header}}
-
+        <p>You can search for weather :<p>
+        <p>1. Type the name of the place:</p>
+        <p>Enter "Location" you want to search for -</p>
+        <p>Example: Boston</p>
+        <p>---</p>
+        <p>Enter "Zip Code" you want to search for -</p>
+        <p>Example: 14623  - (which is the Zip Code for Rochester, NY)</p>
+        <p>---</p>
+        <p>3. You can narrow down your weather search for confusing place names: </p>
+        <p>Example: Paris</p>
+        <p>Output: This will fetch you the result for Paris, France.</p>
+        <p>---</p>
+        <p>Example : Paris TX</p>
+        <p>Output: This will fetch you the result for Paris, Texas, United States.</p>
+    
         {{!-- <h1>Do you need any help?</h1> --}}
         <p>{{helpText}}</p>
     </div>

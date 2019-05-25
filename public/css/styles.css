@@ -54,3 +54,24 @@ button{
     color: white;
     padding: 8px;
 }
+
+#main-body{
+    line-height: 20pt;
+}
+
+#message2{
+    line-height: 20pt;
+}
+
+.contact{
+    width: 50px;
+}
+
+.row {
+    display: flex;
+}
+  
+.column {
+    
+    padding: 5px;
+}
